@@ -20,7 +20,7 @@ public class PasswordGeneration {
         int n;
         StringBuilder s = new StringBuilder(size);
         for (int i = 0; i < size; i++) {
-            n = r.nextInt(sizeAlphabet + 1);
+            n = r.nextInt(sizeAlphabet);
             s.append(alphabet.charAt(n));
         }
         return s.toString();
